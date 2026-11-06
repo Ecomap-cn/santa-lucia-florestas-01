@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fazenda Madekin – Tabela de Uso do Solo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root{
+      --border:#3f3f3f;
+      --head:#f1f3f2;
+      --dark:#111;
+      --green:#1aa84b;
+      --soft:#f8faf8;
+    }
+
+    body{
+      margin:0;
+      padding:20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#ffffff;
+      color:#111;
+    }
+
+    .header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      margin-bottom:20px;
+    }
+
+    .header img{
+      max-height:70px;
+      width:auto;
+    }
+
+    .title{
+      font-size:22px;
+      font-weight:800;
+      text-align:center;
+      border-bottom:2px solid #000;
+      padding-bottom:8px;
+      width:100%;
+    }
+
+    .subtitle{
+      font-size:15px;
+      font-weight:700;
+      text-align:center;
+      color:#333;
+      margin-top:-4px;
+    }
+
+    .table-wrapper{
+      width:100%;
+      overflow-x:auto;
+      margin:18px 0 28px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      table-layout:fixed;
+      font-size:15px;
+      min-width:900px;
+    }
+
+    th, td{
+      border:1px solid var(--border);
+      padding:8px 10px;
+      vertical-align:middle;
+    }
+
+    th{
+      background:var(--head);
+      font-weight:800;
+      text-align:center;
+    }
+
+    .section-title th{
+      background:#111;
+      color:#fff;
+      text-align:left;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+
+    td.desc{
+      text-align:left;
+      font-weight:700;
+    }
+
+    td.num{
+      text-align:right;
+      font-weight:600;
+      white-space:nowrap;
+    }
+
+    td.center{
+      text-align:center;
+    }
+
+    .total-row td{
+      font-weight:800;
+      background:#f3f6f3;
+    }
+
+    .grand-total td{
+      background:var(--green);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .note{
+      font-size:12px;
+      color:#444;
+      margin-top:6px;
+      text-align:right;
+    }
+
+    @media (max-width: 768px){
+      body{ padding:12px; }
+      .title{ font-size:20px; }
+      .subtitle{ font-size:14px; }
+      .header img{ max-height:60px; }
+      table{ font-size:14px; min-width:860px; }
+      th, td{ padding:7px 8px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="images/logo-site-final-2.png" alt="Santa Lúcia Madeiras">
+    <div class="title">Tabela de Uso do Solo – Áreas</div>
+    <div class="subtitle">Fazenda Madekin</div>
+  </div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr class="section-title">
+          <th colspan="6">USO DO SOLO</th>
+        </tr>
+        <tr>
+          <th rowspan="2" style="width:34%;">Uso do Solo</th>
+          <th colspan="3">Área (ha) – Matrículas</th>
+          <th rowspan="2" style="width:15%;">Total</th>
+          <th rowspan="2" style="width:11%;">%</th>
+        </tr>
+        <tr>
+          <th style="width:13%;">34.673</th>
+          <th style="width:13%;">34.674</th>
+          <th style="width:13%;">34.675</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="desc">Matrícula</td><td class="num">149,971</td><td class="num">24,870</td><td class="num">186,400</td><td class="num">361,241</td><td class="center"></td></tr>
+        <tr><td class="desc">Pinus 2023</td><td class="num">102,973</td><td class="num">13,288</td><td class="num">135,323</td><td class="num">251,584</td><td class="num">69,6%</td></tr>
+        <tr><td class="desc">Pinus Velho</td><td class="num">-</td><td class="num">-</td><td class="num">6,660</td><td class="num">6,660</td><td class="num">1,8%</td></tr>
+        <tr><td class="desc">Estradas Internas</td><td class="num">3,356</td><td class="num">0,621</td><td class="num">4,772</td><td class="num">8,749</td><td class="num">2,4%</td></tr>
+        <tr><td class="desc">Sede</td><td class="num">-</td><td class="num">-</td><td class="num">0,553</td><td class="num">0,553</td><td class="num">0,2%</td></tr>
+        <tr><td class="desc">Faixa de Servidão - Rede Elétrica</td><td class="num">-</td><td class="num">-</td><td class="num">0,163</td><td class="num">0,163</td><td class="num">0,0%</td></tr>
+        <tr><td class="desc">Vegetação</td><td class="num">32,509</td><td class="num">7,674</td><td class="num">25,732</td><td class="num">65,915</td><td class="num">18,2%</td></tr>
+        <tr><td class="desc">APP</td><td class="num">11,136</td><td class="num">3,289</td><td class="num">13,224</td><td class="num">27,649</td><td class="num">7,7%</td></tr>
+        <tr class="grand-total"><td class="desc">TOTAL</td><td class="num">149,974</td><td class="num">24,872</td><td class="num">186,427</td><td class="num">361,273</td><td class="num">100,0%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr class="section-title">
+          <th colspan="6">PROJETO DE PLANTIO</th>
+        </tr>
+        <tr>
+          <th rowspan="2" style="width:34%;">Projeto de Plantio</th>
+          <th colspan="3">Área (ha) – Matrículas</th>
+          <th rowspan="2" style="width:15%;">Total</th>
+          <th rowspan="2" style="width:11%;">%</th>
+        </tr>
+        <tr>
+          <th style="width:13%;">34.673</th>
+          <th style="width:13%;">34.674</th>
+          <th style="width:13%;">34.675</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="desc">Pinus 2023</td><td class="num">102,973</td><td class="num">13,288</td><td class="num">135,323</td><td class="num">251,584</td><td class="num">94,9%</td></tr>
+        <tr><td class="desc">Pinus 2023 Em APP</td><td class="num">1,839</td><td class="num">0,276</td><td class="num">4,782</td><td class="num">6,897</td><td class="num">2,6%</td></tr>
+        <tr><td class="desc">Pinus Velho</td><td class="num">-</td><td class="num">-</td><td class="num">6,660</td><td class="num">6,660</td><td class="num">2,5%</td></tr>
+        <tr class="grand-total"><td class="desc">TOTAL</td><td class="num">104,812</td><td class="num">13,564</td><td class="num">146,765</td><td class="num">265,141</td><td class="num">100,0%</td></tr>
+        <tr class="total-row"><td class="desc">GRAU DE UTILIZAÇÃO</td><td class="num">69,9%</td><td class="num">54,5%</td><td class="num">78,7%</td><td class="num">73,4%</td><td class="center"></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
